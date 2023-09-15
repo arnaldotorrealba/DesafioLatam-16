@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+.converter-container {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 0.5rem 1rem;
+    border: 2px solid #000;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.converter-container label {
+    margin: 0.25rem 0;
+}
+
+.converter-title {
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.text-input,
+.select-input,
+.btn {
+    padding: 0.25rem;
+    border: 1px solid black;
+    border-radius: 0.25rem;
+}
+
+.btn {
+    background-color: rgb(28, 148, 112);
+    margin: 0.5rem 0;
+}
+
+.btn:hover {
+    background-color: rgb(9, 96, 70);
+    color: #fff;
+}
+
+.converter-text {
+    background-color: rgb(135, 218, 193);
+    border-radius: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+}
+
+.converter-text > p {
+    margin: 0.25rem;
+}
+
+.converter-text-clp,
+.converter-text-tasa {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.converter-text-total {
+    font-size: 30px;
+}
+
+.chart-title {
+    text-align: center;
+    margin: 0.5rem 0;
+}
