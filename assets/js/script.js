@@ -4,10 +4,12 @@
 const indicatorRequest = async (indicator) => {
     try {
         const response = await fetch(`https://mindicador.cl/api/${indicator}`);
-        if (!response.ok) throw new Error("Ocurrió un error");
+        if (!response.ok)
+            throw new Error(`${response.status} - ${response.statusText}`);
         const data = await response.json();
         return data.serie;
     } catch (error) {
+        console.log(error);
         const converterText = document.getElementById("converter-text");
         converterText.innerText = error;
         converterText.style.color = "red";
